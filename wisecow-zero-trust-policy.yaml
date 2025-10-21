@@ -9,14 +9,12 @@ spec:
       app: wisecow
   file:
     matchPaths:
-      # Allow only necessary files
       - path: "/usr/share/fortune"
         action: Allow
       - path: "/usr/local/bin/cowsay"
         action: Allow
   process:
     matchPaths:
-      # Allow only required binaries
       - path: "/usr/games/fortune"
         action: Allow
       - path: "/usr/local/bin/cowsay"
